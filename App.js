@@ -1,23 +1,21 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, View } from "react-native";
-import Deck from "./components/Deck";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
-      <Deck />
     </View>
   );
 }
-
-console.disableYellowBox = true;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    paddingVertical: 50,
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
